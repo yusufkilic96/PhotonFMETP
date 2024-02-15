@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7232890013601554265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7232890013601554262}
+  - component: {fileID: 7232890013601554261}
+  - component: {fileID: 7232890013601554266}
+  - component: {fileID: 7232890013601554267}
+  m_Layer: 0
+  m_Name: Main Camera(Encoder)
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7232890013601554262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232890013601554265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &7232890013601554261
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232890013601554265}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.02745098, g: 0.11764706, b: 0.25490198, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 100
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &7232890013601554266
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232890013601554265}
+  m_Enabled: 1
+--- !u!114 &7232890013601554267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232890013601554265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a9483c7a45cc456b85c2f3db18182e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EditorShowMode: 1
+  EditorShowSettings: 1
+  EditorShowNetworking: 1
+  EditorShowEncoded: 1
+  EditorShowPairing: 1
+  CaptureMode: 1
+  ResolutionScaling: 0.25
+  MainCam: {fileID: 7232890013601554261}
+  RenderCam: {fileID: 0}
+  Resolution: {x: 512, y: 512}
+  MatchScreenAspect: 1
+  FastMode: 1
+  AsyncMode: 1
+  GZipMode: 0
+  PanoramaMode: 0
+  Quality: 40
+  ChromaSubsampling: 2
+  StreamFPS: 20
+  ignoreSimilarTexture: 1
+  similarByteSizeThreshold: 8
+  EnableAsyncGPUReadback: 1
+  PreviewType: 0
+  PreviewRawImage: {fileID: 0}
+  PreviewMeshRenderer: {fileID: 0}
+  CapturedTexture: {fileID: 0}
+  MatPano: {fileID: 0}
+  MatFMDesktop: {fileID: 0}
+  MatColorAdjustment: {fileID: 0}
+  MatMixedReality: {fileID: 0}
+  EnableMixedReality: 0
+  MixedRealityTargetCamID: 0
+  MixedRealityUseFrontCam: 0
+  MixedRealityRequestResolution: {x: 1280, y: 720}
+  MixedRealityFlipX: 0
+  MixedRealityFlipY: 0
+  MixedRealityScaleX: 1
+  MixedRealityScaleY: 1
+  MixedRealityOffsetX: 0
+  MixedRealityOffsetY: 0
+  ColorReductionLevel: 0
+  mat_source: {fileID: 0}
+  CubemapResolution: 1024
+  FMDesktopShowAdvancedOptions: 0
+  FMDesktopRotation: 0
+  FMDesktopResolution: {x: 0, y: 0}
+  FMDesktopFlipX: 1
+  FMDesktopFlipY: 0
+  FMDesktopShowCursor: 1
+  FMDesktopRangeX: 1
+  FMDesktopRangeY: 1
+  FMDesktopOffsetX: 0
+  FMDesktopOffsetY: 0
+  FMDesktopRotationAngle: 0
+  FMDesktopTextureFormat: 4
+  FMDesktopTargetDisplay: 0
+  FMDesktopMonitorCount: 0
+  OutputFormat: 0
+  OutputAsChunks: 1
+  OnDataByteReadyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: SendToOthers
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnRawMJPEGReadyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRawRGB24ReadyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  label: 1001
+  dataLength: 0
