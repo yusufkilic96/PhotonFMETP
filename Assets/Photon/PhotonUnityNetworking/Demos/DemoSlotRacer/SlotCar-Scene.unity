@@ -22845,7 +22845,7 @@ MonoBehaviour:
   MatFMDesktop: {fileID: 0}
   MatColorAdjustment: {fileID: 0}
   MatMixedReality: {fileID: 0}
-  EnableMixedReality: 0
+  EnableMixedReality: 1
   MixedRealityTargetCamID: 0
   MixedRealityUseFrontCam: 0
   MixedRealityRequestResolution: {x: 1280, y: 720}
