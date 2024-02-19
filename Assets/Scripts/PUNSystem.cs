@@ -22,6 +22,7 @@ public class PUNSystem : MonoBehaviour
     
     public void WebCam()
     {
+        /*
         if (WebcamToggle.isOn == true)
         {
             Track.SetActive(false);
@@ -30,6 +31,7 @@ public class PUNSystem : MonoBehaviour
         {
             Track.SetActive(true);
         }
+        */
     }
 
     public void SendMessage(byte[] _byteData, string message, string username)
