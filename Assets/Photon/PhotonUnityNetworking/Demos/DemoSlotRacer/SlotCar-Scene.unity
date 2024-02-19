@@ -9112,20 +9112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnDataByteReadyEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2046941334810880294}
-        m_TargetAssemblyTypeName: FMETP.FMNetworkManager, Assembly-CSharp
-        m_MethodName: SendToOthers
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _GameViewDecoder: {fileID: 0}
+      m_Calls: []
 --- !u!4 &709951626
 Transform:
   m_ObjectHideFlags: 0
@@ -23084,7 +23071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &8316496171056768521
 AudioSource:
   m_ObjectHideFlags: 0

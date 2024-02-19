@@ -17,7 +17,7 @@ public class PUNSystem : MonoBehaviour
     
     private void Start()
     {
-        YourName = PhotonNetwork.LocalPlayer.UserId;
+        YourName = PlayerPrefs.GetString("nickname");
     }
     
     public void WebCam()
@@ -42,6 +42,7 @@ public class PUNSystem : MonoBehaviour
     [PunRPC]
     private void RPC_SendMessage(byte[] _byteData, string message, string username)
     {
+        Debug.Log(YourName + " " + username);
         if (YourName != username)
         {
             if (message.Contains("VideoShare"))

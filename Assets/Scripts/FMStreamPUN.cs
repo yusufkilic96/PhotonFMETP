@@ -1,4 +1,3 @@
-using System;
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,14 +9,6 @@ public class FMStreamPUN : Photon.Pun.MonoBehaviourPun, IPunObservable {
     public int appendQueueSendDataCount { get { return appendQueueSendData.Count; } }
 
     public UnityEventByteArray OnDataByteReadyEvent = new UnityEventByteArray();
-
-    public GameViewDecoder _GameViewDecoder;
-    
-    void Start()
-    {
-        _GameViewDecoder = FindObjectOfType<GameViewDecoder>();
-        OnDataByteReadyEvent.AddListener(_GameViewDecoder.Action_ProcessImageData);
-    }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
         if (stream.IsWriting) {

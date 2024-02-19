@@ -704,7 +704,7 @@ namespace FMETP
         // Use this for initialization
         private void Start()
         {
-            UserName = PhotonNetwork.LocalPlayer.UserId;
+            UserName = PlayerPrefs.GetString("nickname");
             if (AutoInit) Init();
             
             punSystem = GameObject.Find("AlonePun").GetComponent<PUNSystem>();
@@ -882,10 +882,11 @@ namespace FMETP
 
         public void SendToOthers(byte[] _byteData)
         {
+            UserName = PlayerPrefs.GetString("nickname");
             Send(_byteData, FMSendType.Others, null, false);
             if (StartPun == true)
             {
-                punSystem.SendMessage(_byteData, "VideoShare", YourName);
+                punSystem.SendMessage(_byteData, "VideoShare", UserName);
             }
         }
 

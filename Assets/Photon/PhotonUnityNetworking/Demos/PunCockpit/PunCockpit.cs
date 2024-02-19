@@ -149,6 +149,7 @@ namespace Photon.Pun.Demo.Cockpit
             if (string.IsNullOrEmpty(UserId))
             {
                 UserId = "user" + Environment.TickCount % 99; //made-up username
+                PlayerPrefs.SetString("nickname", UserId);
             }
 
             PlayerTtlField.SetValue(this.PlayerTtl);
